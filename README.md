@@ -1,5 +1,5 @@
 # Description
-This repository was created using `Express` framework.  Here we have three basic endpoints to perform some actions to illustrate how Express works.
+This repository was created using `Express` framework.  Here we have three basic endpoints to perform some actions that illustrate how Express works.
 
 # Endpoints
 -`GET`  /status   
