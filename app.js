@@ -18,7 +18,7 @@ app.get('/status', (req, res) => {
 });
 
 app.post('/calcnumber', (req, res) => {
-  const reqNumber = req.body.number;
+  const reqNumber = Number(req.query.number);
 
   const apiResponse = {
     Number: reqNumber,
@@ -31,7 +31,7 @@ app.post('/calcnumber', (req, res) => {
 
 app.post('/checkmail', (req, res) => {
   const regEx = new RegExp(/^[\a-z-\.]+@([\w-]+\.)+[\w-]{2,4}$/g);
-  const email = req.body.email;
+  const email = req.query.email;
   
   if(regEx.test(email)){
     return res.json({

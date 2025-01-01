@@ -9,16 +9,12 @@ This repository was created using `Express` framework.  Here we have three basic
 ## Requisition examples
 `POST` /calcnumber 
 ```
-{
-    "number": 100
-}
+curl --location --request POST 'http://localhost:3000/calcnumber?number=100'
 ```
 
 `POST` /checkmail 
 ```
-{
-    "email": "examplE@gmail.com"
-}
+curl --location --request POST 'http://localhost:3000/checkmail?email=examplE%40example.com'
 ```
 
 # Installation
